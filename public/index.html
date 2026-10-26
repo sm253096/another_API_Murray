@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Tracker Labs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        form {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        #message {
+            min-height: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task Tracker</h1>
+    <form id="task-form">
+        <label for="task-input">New task</label>
+        <input type="text" id="task-input" placeholder="Enter new task..." required>
+        <button type="submit">Add Task</button>
+    </form>
+    <p id="message" role="status"></p>
+    <div id="task-list"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
